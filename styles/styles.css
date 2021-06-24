@@ -19,7 +19,8 @@ body {
     height: 100%;
     position: relative;
     display: flex;
-    background: url('../images/mainPosterWithJS.jpg') center center/ cover no-repeat;
+    justify-content: center;
+    background: url('../images/mainPosterWithJS.jpg') center center/cover no-repeat;
 }
 
 .start {
@@ -53,13 +54,46 @@ body {
 
 .gameArea {
     height: 100%;
-    width: 100%;
+    width: 400px;
     position: relative;
+    background: #292d29;
+    overflow: hidden;
+    box-shadow: 1px 1px 100px #292d29;
 }
 
 .car {
     height: 100px;
     width: 50px;
+    left: 175px;
+    bottom: 10px;
     position: absolute;
     background: url("../images/player.png") center center/cover no-repeat;
+}
+
+.line {
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background: #f1f1f1;
+    left: 200px;
+}
+
+.leftLine {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: #f1f1f1;
+    left: 0;
+}
+
+.rightLine {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: #f1f1f1;
+    left: 390px;
+}
+
+.car.enemy {
+    background: url("../images/enemy.png") center center/cover no-repeat;
 }
